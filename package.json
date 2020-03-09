@@ -3,17 +3,10 @@
   "version": "2.9.0",
   "description": "CoreUI Free Angular 2+ Admin Template",
   "author": {
-    "name": "Łukasz Holeczek",
-    "url": "http://holeczek.pl",
-    "github": "https://github.com/mrholek",
-    "twitter": "https://twitter.com/lukaszholeczek"
+    "name": "sagasw",
+    "url": "https://",
+    "github": "https://github.com/saga"
   },
-  "contributors": [
-    {
-      "name": "Andrzej Kopański",
-      "url": "https://github.com/xidedix"
-    }
-  ],
   "homepage": "https://coreui.io/angular",
   "copyright": "Copyright 2020 creativeLabs Łukasz Holeczek",
   "license": "MIT",
@@ -21,12 +14,8 @@
     "ng": "ng",
     "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points",
     "start": "ng serve",
-    "build": "ng build --prod --aot --buildOptimizer --commonChunk --vendorChunk --optimization --progress",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "build": "ng build --aot --buildOptimizer --commonChunk --vendorChunk --optimization --progress"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^9.0.0",
     "@angular/common": "^9.0.0",
@@ -62,20 +51,9 @@
     "@angular/cli": "^9.0.1",
     "@angular/compiler-cli": "^9.0.0",
     "@angular/language-service": "^9.0.0",
-    "@types/jasmine": "^3.5.3",
-    "@types/jasminewd2": "^2.0.8",
     "@types/node": "^12.11.1",
     "codelyzer": "^5.2.1",
-    "jasmine-core": "^3.5.0",
-    "jasmine-spec-reporter": "^4.2.1",
-    "karma": "^4.4.1",
-    "karma-chrome-launcher": "^3.1.0",
-    "karma-coverage-istanbul-reporter": "^2.1.0",
-    "karma-jasmine": "^2.0.1",
-    "karma-jasmine-html-reporter": "^1.5.2",
-    "protractor": "^5.4.2",
     "ts-node": "^8.4.1",
-    "tslint": "^5.20.0",
     "typescript": "~3.7.5"
   },
   "engines": {
