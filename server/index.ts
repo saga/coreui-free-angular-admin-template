@@ -7,20 +7,18 @@ import * as path from "path";
 const app: express.Application = express();
 
 app.use(helmet());
-
-app.disable("x-powered-by");
-
 app.use(json());
 app.use(compression());
 app.use(urlencoded({ extended: true }));
-
-//app.use(cookieParser(config.cookieSecret));
 app.set('trust proxy', 1);
 
-app.use(express.static(path.join(__dirname, "/../client")));
+// serve the client side
+app.use(express.static(path.join(__dirname, "../client")));
 
-app.get('/', (req, response) => {
-  response.send('Hello world!');
+app.get('/api', (req, response) => {
+    response.send('Hello world!');
 });
 
-app.listen(3000);
+app.listen(3333, () => {
+    console.log("server start to monitor 3333");
+});

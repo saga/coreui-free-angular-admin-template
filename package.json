@@ -12,10 +12,12 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
+    "build": "npm run client:build && npm run server:build",
     "client:postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points",
     "client:start": "ng serve",
     "client:build": "ng build --aot --buildOptimizer --commonChunk --vendorChunk --optimization --progress",
-    "server:build": "tsc -p ./server"
+    "server:build": "tsc -p ./server",
+    "server:run": "node dist/server/index.js"
   },
   "dependencies": {
     "@angular/animations": "^9.0.0",
