@@ -1,6 +1,6 @@
 {
   "name": "@coreui/coreui-free-angular-admin-template",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "CoreUI Free Angular 2+ Admin Template",
   "author": {
     "name": "sagasw",
@@ -14,7 +14,8 @@
     "ng": "ng",
     "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points",
     "start": "ng serve",
-    "build": "ng build --aot --buildOptimizer --commonChunk --vendorChunk --optimization --progress"
+    "build": "ng build --aot --buildOptimizer --commonChunk --vendorChunk --optimization --progress",
+    "server:build": "tsc -p ./server"
   },
   "dependencies": {
     "@angular/animations": "^9.0.0",
@@ -32,6 +33,14 @@
     "bootstrap": "^4.3.1",
     "chart.js": "^2.9.2",
     "core-js": "^2.6.11",
+    "body-parser": "1.19.0",
+    "compression": "1.7.4",
+    "cookie-parser": "1.4.4",
+    "express-jwt": "5.3.1",
+    "jsonwebtoken": "^7.3.0",
+    "helmet": "3.21.3",
+    "uuid": "7.0.2",
+    "express": "4.17.1",
     "flag-icon-css": "^3.4.6",
     "font-awesome": "^4.7.0",
     "moment": "^2.24.0",
@@ -52,7 +61,12 @@
     "@angular/compiler-cli": "^9.0.0",
     "@angular/language-service": "^9.0.0",
     "@types/node": "^12.11.1",
+    "@types/cors": "2.8.6",
+    "@types/express": "4.17.3",
+    "@types/jsonwebtoken": "8.3.8",
+    "@types/uuid": "7.0.0",
     "codelyzer": "^5.2.1",
+    "concurrently": "5.1.0",
     "ts-node": "^8.4.1",
     "typescript": "~3.7.5"
   },
