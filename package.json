@@ -17,7 +17,7 @@
     "client:start": "ng serve",
     "client:build": "ng build --aot --buildOptimizer --commonChunk --vendorChunk --optimization --progress",
     "server:build": "tsc -p ./server",
-    "server:run": "node dist/server/index.js",
+    "server:run": "nodemon node dist/server/index.js",
     "start": "npm run server:run"
   },
   "dependencies": {
@@ -44,6 +44,7 @@
     "helmet": "3.21.3",
     "uuid": "7.0.2",
     "express": "4.17.1",
+    "nodemon": "2.0.2",
     "flag-icon-css": "^3.4.6",
     "font-awesome": "^4.7.0",
     "moment": "^2.24.0",
