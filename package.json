@@ -8,13 +8,13 @@
     "github": "https://github.com/saga"
   },
   "homepage": "https://coreui.io/angular",
-  "copyright": "Copyright 2020 creativeLabs Łukasz Holeczek",
+  "copyright": "sagasw",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points",
-    "start": "ng serve",
-    "build": "ng build --aot --buildOptimizer --commonChunk --vendorChunk --optimization --progress",
+    "client:postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points",
+    "client:start": "ng serve",
+    "client:build": "ng build --aot --buildOptimizer --commonChunk --vendorChunk --optimization --progress",
     "server:build": "tsc -p ./server"
   },
   "dependencies": {

@@ -5,26 +5,26 @@
   "projects": {
     "ng": {
       "root": "",
-      "sourceRoot": "src",
+      "sourceRoot": "client",
       "projectType": "application",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "tsConfig": "src/tsconfig.app.json",
-            "polyfills": "src/polyfills.ts",
+            "outputPath": "dist/client",
+            "index": "client/index.html",
+            "main": "client/main.ts",
+            "tsConfig": "client/tsconfig.app.json",
+            "polyfills": "client/polyfills.ts",
             "assets": [
-              "src/assets"
+              "client/assets"
             ],
             "styles": [
               "node_modules/@coreui/icons/css/coreui-icons.css",
               "node_modules/flag-icon-css/css/flag-icon.css",
               "node_modules/font-awesome/css/font-awesome.css",
               "node_modules/simple-line-icons/css/simple-line-icons.css",
-              "src/scss/style.scss"
+              "client/scss/style.scss"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
@@ -54,8 +54,8 @@
               "buildOptimizer": true,
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "client/environments/environment.ts",
+                  "with": "client/environments/environment.prod.ts"
                 }
               ]
             }
